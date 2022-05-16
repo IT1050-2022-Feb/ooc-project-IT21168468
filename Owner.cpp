@@ -1,4 +1,6 @@
+#include <iostream>
 #include "Person.h"
+#include "Owner.h"
 #include <cstring>
 
 using namespace std;
