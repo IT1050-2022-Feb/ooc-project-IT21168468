@@ -2,7 +2,7 @@
 OOC-Project-IT1050 created by GitHub Classroom\
 \
 Members and Tasks: \
----------------------------------------------\
+--------------------------------------------- \
 IT21168468 - R.K.N. Dhananjana \
 *Person, *Owner, *Doctor, *Staff\
 \
