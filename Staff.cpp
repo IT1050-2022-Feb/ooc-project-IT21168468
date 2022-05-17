@@ -48,6 +48,6 @@ void Staff :: DisplayStaff() {
 }
 
 Staff :: ~Staff() {
-	cout << "Destructor Called\n";
+	cout << "Deleting Staff\n";
 }
 
