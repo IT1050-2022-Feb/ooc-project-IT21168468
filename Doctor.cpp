@@ -33,5 +33,8 @@ void Doctor :: DisplayDoctorData() {
 }
 
 Doctor :: ~Doctor() {
-	cout << "Destructor Called\n";
+	for(int i = 0; i < size; i++){
+		delete app[i];
+	}
+	cout << "Deleting Doctor\n";
 }
