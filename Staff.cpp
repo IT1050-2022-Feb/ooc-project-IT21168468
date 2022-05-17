@@ -1,6 +1,10 @@
 #include <iostream>
 #include "Person.h"
 #include "Staff.h"
+#include "Doctor.h"
+#include "Appointment.h"
+#include "DayCare.h"
+#include "Item.h"
 #include <cstring>
 
 using namespace std;
@@ -12,18 +16,31 @@ Staff :: Staff() {
   ContactNo = "";
 }
 
-Staff :: Staff(string staffId, string name, string email, string contactNo) {
-  	StaffId = staffId;
-  	Name = name;
-	Email = email;
-	ContactNo = contactNo;
+Staff :: Staff(string staffid, string name, string email, string contactno, Item *pitm, DayCare *pdcr, Doctor *pdoc, Appointment *paap) {
+  	
 }
 
 void Staff :: Display() {
   cout << "This is Staff Class >> Derived from Person\n\n";
 }
 
-void Staff :: DisplayStaffData() {
+void Staff :: DisplayItem() {
+	
+}
+
+void Staff :: DisplayDayCare(){
+	
+}
+
+void Staff :: DisplayAppointment() {
+	
+}
+
+void Staff :: DisplayDoctor() {
+	
+}
+
+void Staff :: DisplayStaff() {
 	cout << "Staff Id	: " << StaffId << "\n";
 	cout << "Name		: " << Name  << "\n";
 	cout << "Email		: " << Email << "\n";
