@@ -47,6 +47,10 @@ void Owner :: AddAppointment() {
 }
 
 Owner :: ~Owner() {
-	cout << "Destructor Called\n";
+	for(int i = 0; i < size; i++){
+		delete pet[i];
+		delete pay[i];
+	}
+	cout << "Deleting Owner\n";
 }
 
