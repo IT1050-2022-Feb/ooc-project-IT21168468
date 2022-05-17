@@ -1,4 +1,5 @@
 #include "Person.h"
+#include "Appointment.h"
 #include <cstring>
 
 using namespace std;
@@ -6,10 +7,12 @@ using namespace std;
 class Doctor : public Person {
   protected:
     string DoctorId;
+    Appointment *app[size];
   public:
     Doctor();
-    Doctor(string doctorId, string name, string email, string contactNo);
+    Doctor(string doctorid, string name, string email, string contactno, int app1);
     void Display();
-    void DisplayDoctorData();
+    void DisplayDoctor();
+    void DisplayAppointment();
     ~Doctor();
 };
