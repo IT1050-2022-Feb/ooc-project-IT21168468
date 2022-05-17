@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Person.h"
 #include "Doctor.h"
+#include "Appointment.h"
 #include <cstring>
 
 using namespace std;
@@ -12,15 +13,16 @@ Doctor :: Doctor() {
   ContactNo = "";
 }
 
-Doctor :: Doctor(string name, string email, string contactNo, string doctorId) {
-  DoctorId = doctorId;
-  Name = name;
-  Email = email;
-  ContactNo = contactNo;
+Doctor :: Doctor(string doctorid, string name, string email, string contactno, int app1) {
+  
 }
 
 void Doctor :: Display() {
   cout << "This is Doctor Class >> Derived from Person\n\n";
+}
+
+void Doctor :: DisplayAppointment() {
+	
 }
 
 void Doctor :: DisplayDoctorData() {
