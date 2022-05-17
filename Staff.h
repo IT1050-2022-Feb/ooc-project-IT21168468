@@ -1,4 +1,8 @@
 #include "Person.h"
+#include "Doctor.h"
+#include "Appointment.h"
+#include "DayCare.h"
+#include "Item.h"
 #include <cstring>
 
 using namespace std;
@@ -6,10 +10,17 @@ using namespace std;
 class Staff : public Person {
   protected:
     string StaffId;
+    Item *itm[size];
+    DayCare *dcr[size];
+    Doctor *doc[size];
   public:
     Staff();
-    Staff(string staffId, string name, string email, string contactNo);
+    Staff(string staffid, string name, string email, string contactno, Item *pitm, DayCare *pdcr, Doctor *pdoc, Appointment *paap);
     void Display();
-    void DisplayStaffData();
+    void DisplayItem();
+    void DisplayDayCare();
+    void DisplayAppointment();
+    void DisplayDoctor();
+    void DisplayStaff();
     ~Staff();
 };
